@@ -18,11 +18,11 @@ X_pol=pol_reg.fit_transform(X) # hazırlanan ön işlemi X değerlerine uygula
 lr_pol=LinearRegression()
 lr_pol.fit(X_pol,y)
 y_tahmin_pol=lr_pol.predict(X_pol)
-# print(X_pol)
-# plt.scatter(X,y)
-# plt.plot(X,y_tahmin,color="red")
-# plt.plot(X,y_tahmin_pol,color="green")
-# plt.show()
+print(X_pol)
+plt.scatter(X,y)
+plt.plot(X,y_tahmin,color="red")
+plt.plot(X,y_tahmin_pol,color="green")
+plt.show()
 
 #polinomal regresyon için tahmin nasıl yapılır
 x_yeni=[[600],[700]]
